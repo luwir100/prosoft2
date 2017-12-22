@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  database:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database/db/001_initial_seed.sql:/docker-entrypoint-initdb.d/001_initial_seed.sql:ro
+      - ./database/data:/var/lib/mysql:rw
+    env_file:
+      - vars.env
