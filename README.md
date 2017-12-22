@@ -1,2 +1,2 @@
-# prosoft2
-Repository for general use and testing
+# Woche7
+Erste Überlegungen zur Datenbank und ein erster Entwurf.
